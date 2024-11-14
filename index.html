@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        schapka
+    </header>
+
+    <nav>
+        navigation
+        <ul>
+            <li>
+                <a href="#">sijlka</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="section-container">
+        <article>
+            <!-- Изображение -->
+            <h1>
+                <img src="bild/ZakonBojiy.jpg" alt="Закон Божий" width="200">
+            </h1>
+            <!-- Контейнер для текста -->
+            <div class="content">
+                <p>Книга "Закон Божий", составленная протоиереем Серафимом Слободским (1912-1971), выдержала множество изданий. Она более полувека остается основным пособием по изучению Православия для детей и взрослых. Эта книга охватывает все аспекты православного вероучения, нравственности и церковной жизни. В ней в доступной форме изложены все необходимые каждому православному христианину сведения и понятия. Издание адресовано всем, кто знакомит с Православием: учащимся воскресных школ; тем, кто готовится принять Святое Крещение или недавно стал членом Церкви Христовой.</p>
+            </div>
+            <!-- Кнопки: Чтение и Скачивание -->
+            <div class="button-container">
+                <button onclick="window.location.href='zakonbojiy.html'">Читать</button>
+                <a href="maps/zakonbojiy.pdf" download="zakonbojiy.pdf" onclick="confirmDownload(event)">
+                <button>Скачать</button>
+                </a>
+            </div>
+        </article>
+    </section>
+    
+    <!-- Подключение JavaScript -->
+    <script src="script.js"></script>
+    
+    <script>
+        function confirmDownload() {
+            if (confirm("Вы хотите скачать этот файл?")) {
+                window.location.href = 'maps/zakonbojiy.pdf'; // Путь к файлу для скачивания
+            }
+        }
+    </script>
+    
+    
+    
+
+    <section>
+        Sektion2
+        <article>
+            <h1>zagolowok</h1>
+            <p>text</p>
+        </article>
+    </section>
+    
+    <footer>
+        <p>data, adres</p>
+    </footer>
+
+</body>
+</html>
